@@ -4,7 +4,6 @@ metadata:
   name: notification-microservice
   namespace: application-service
 spec:
-  serviceAccountName: notification-ksa
   replicas: 1
   selector:
     matchLabels:
@@ -14,6 +13,7 @@ spec:
       labels:
         app: notification-microservice
     spec:
+      serviceAccountName: notification-sa
       containers:
         - name: app-container
           image: __IMAGE_PATH__
