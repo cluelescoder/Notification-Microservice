@@ -1,0 +1,108 @@
+pipeline {
+    options {
+        buildDiscarder(
+            logRotator(
+                numToKeepStr: '10',
+                daysToKeepStr: '7',
+                artifactDaysToKeepStr: '7',
+                artifactNumToKeepStr: '10'
+            )
+        )
+    }
+
+    agent {
+        kubernetes {
+            label "agent-${UUID.randomUUID().toString()}"
+            yamlFile "Notification-Microservice/pipeline/agent.yaml"
+        }
+    }
+
+    environment {
+        GKE_CLUSTER_NAME = 'lloydsbank-cluster'
+        GKE_PROJECT = 'sap-2024novasdeblr-prd-mg'
+        GKE_ZONE = 'asia-south1'
+        DOCKER_REGISTRY = 'asia-south1-docker.pkg.dev/sap-2024novasdeblr-prd-mg/lloyds-docker-repo'
+        DOCKER_IMAGE_NAME = 'notification-microservice-final-demo'
+        IMAGE_VERSION = "v${BUILD_NUMBER}"
+        FULL_IMAGE_PATH = "${DOCKER_REGISTRY}/${DOCKER_IMAGE_NAME}:${IMAGE_VERSION}"
+        SONARQUBE_URL = 'https://tools.publicis.sapient.com/sonar'
+        SONARQUBE_TOKEN = credentials('jenkins-ps')
+        TRIVY_INSTALL_URL = 'https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh'
+        TRIVY_TEMPLATE_URL = 'https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/html.tpl'
+        TRIVY_BINARY_PATH = './bin'
+    }
+
+    stages {
+        stage('Clone Repository') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Compile Code and Run Testcases') {
+            steps {
+                container('maven-container') {
+                    script {
+                        dir('Notification-Microservice') {
+                            sh 'mvn clean install'
+                        }
+                    }
+                }
+            }
+            post {
+                 always {
+                      archiveArtifacts artifacts: 'Notification-Microservice/target/site/jacoco/**', fingerprint: true
+                           publishHTML(target: [
+                                    allowMissing: false,
+                                    alwaysLinkToLastBuild: true,
+                                    keepAll: true,
+                                    reportDir: 'Notification-Microservice/target/site/jacoco',
+                                    reportFiles: 'index.html',
+                                    reportName: 'JaCoCo Code Coverage Report'
+                      ])
+                }
+            }
+        }
+
+        stage('SonarQube Analysis') {
+            steps {
+                container('maven-container') {
+                    withSonarQubeEnv('jenkins-ps') {
+                        script {
+                            dir('Notification-Microservice') {
+                                sh """
+                                     mvn clean verify sonar:sonar \
+                                    -Dsonar.projectKey=ASDEBLR_Batch_Notification_Service \
+                                    -Dsonar.host.url=${SONARQUBE_URL} \
+                                    -Dsonar.login=sqp_9bb6327ba051b9b88e26825dfb661f87a97860e7
+                                """
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+//         stage('Quality Gate') {
+//             steps {
+//                 container('maven-container') {
+//                     script {
+//                         timeout(time: 2, unit: 'MINUTES') {
+//                             def qualityGate = waitForQualityGate()
+//                             if (qualityGate.status != 'OK') {
+//                                 echo "SonarQube Quality Gate failed: ${qualityGate.status}"
+//                                 def criticalIssues = sh(script: "curl -s -u ${SONARQUBE_TOKEN}: ${SONARQUBE_URL}/api/issues/search?severities=CRITICAL | jq '.total'", returnStdout: true).trim()
+//                                 def highIssues = sh(script: "curl -s -u ${SONARQUBE_TOKEN}: ${SONARQUBE_URL}/api/issues/search?severities=HIGH | jq '.total'", returnStdout: true).trim()
+//                             if (criticalIssues.toInteger() > 0 || highIssues.toInteger() > 0) {
+//                             error "Pipeline aborted due to Critical (${criticalIssues}) or High (${highIssues}) vulnerabilities detected in SonarQube!"
+//                             }
+//                             error "Pipeline aborted due to Quality Gate failure: ${qualityGate.status}"
+//                        }
+//                     }
+//                 }
+//             }
+//          }
+//       }
+
+    }
+}

@@ -1,0 +1,112 @@
+{"timestamp":"2025-02-23T13:16:08.9112781Z","level":"ERROR","logger":"com.llyods.service.MessageProcessorService","thread":"main","message":"Failed to send email to: Subject. Error: Email sending failed"}
+{"timestamp":"2025-02-23T13:16:08.9342904Z","level":"ERROR","logger":"com.llyods.service.MessageProcessorService","thread":"main","message":"Unexpected error while processing message for email: Subject. Error: Unexpected error"}
+{"timestamp":"2025-02-23T13:16:10.0227671Z","level":"ERROR","logger":"com.llyods.service.PubSubConsumerService","thread":"main","message":"Error deserializing or processing the message: Deserialization error"}
+{"timestamp":"2025-02-23T13:16:10.0518067Z","level":"ERROR","logger":"com.llyods.service.PubSubConsumerService","thread":"main","message":"Invalid payload: Invalid payload"}
+{"timestamp":"2025-02-23T13:16:10.0858869Z","level":"ERROR","logger":"com.llyods.service.PubSubConsumerService","thread":"main","message":"Invalid payload: Invalid payload"}
+{"timestamp":"2025-02-23T13:16:10.0968596Z","level":"ERROR","logger":"com.llyods.service.PubSubConsumerService","thread":"main","message":"Invalid payload: Invalid payload"}
+{"timestamp":"2025-02-23T13:16:10.9784934Z","level":"ERROR","logger":"com.llyods.service.PubSubMailSenderService","thread":"main","message":"Failed to send email to: demo@gmail.com. Error: Mail sending error"}
+{"timestamp":"2025-02-23T13:16:11.0071823Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing email"}
+{"timestamp":"2025-02-23T13:16:11.0081804Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing email"}
+{"timestamp":"2025-02-23T13:16:11.025099Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing subject"}
+{"timestamp":"2025-02-23T13:16:11.025099Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing subject"}
+{"timestamp":"2025-02-23T13:16:11.0371884Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing email"}
+{"timestamp":"2025-02-23T13:16:11.0371884Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing email"}
+{"timestamp":"2025-02-23T13:16:11.0441922Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing subject"}
+{"timestamp":"2025-02-23T13:16:11.0441922Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing subject"}
+{"timestamp":"2025-02-23T13:16:11.0561871Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Deserialization error"}
+{"timestamp":"2025-02-23T13:16:11.0611901Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing message content"}
+{"timestamp":"2025-02-23T13:16:11.0631931Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing message content"}
+{"timestamp":"2025-02-23T13:16:11.0742698Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid email format: invalid-email"}
+{"timestamp":"2025-02-23T13:16:11.0752709Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid email format: invalid-email"}
+{"timestamp":"2025-02-23T13:16:11.0822693Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing message content"}
+{"timestamp":"2025-02-23T13:16:11.0822693Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing message content"}
+{"timestamp":"2025-02-23T13:17:32.7346064Z","level":"ERROR","logger":"com.llyods.service.MessageProcessorService","thread":"main","message":"Failed to send email to: Subject. Error: Email sending failed"}
+{"timestamp":"2025-02-23T13:17:32.7692146Z","level":"ERROR","logger":"com.llyods.service.MessageProcessorService","thread":"main","message":"Unexpected error while processing message for email: Subject. Error: Unexpected error"}
+{"timestamp":"2025-02-23T13:17:33.6798872Z","level":"ERROR","logger":"com.llyods.service.PubSubConsumerService","thread":"main","message":"Error deserializing or processing the message: Deserialization error"}
+{"timestamp":"2025-02-23T13:17:33.7218386Z","level":"ERROR","logger":"com.llyods.service.PubSubConsumerService","thread":"main","message":"Invalid payload: Invalid payload"}
+{"timestamp":"2025-02-23T13:17:33.7762084Z","level":"ERROR","logger":"com.llyods.service.PubSubConsumerService","thread":"main","message":"Invalid payload: Invalid payload"}
+{"timestamp":"2025-02-23T13:17:33.7867551Z","level":"ERROR","logger":"com.llyods.service.PubSubConsumerService","thread":"main","message":"Invalid payload: Invalid payload"}
+{"timestamp":"2025-02-23T13:17:34.3778847Z","level":"ERROR","logger":"com.llyods.service.PubSubMailSenderService","thread":"main","message":"Failed to send email to: demo@gmail.com. Error: Mail sending error"}
+{"timestamp":"2025-02-23T13:17:34.3919109Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing email"}
+{"timestamp":"2025-02-23T13:17:34.3919109Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing email"}
+{"timestamp":"2025-02-23T13:17:34.407716Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing subject"}
+{"timestamp":"2025-02-23T13:17:34.407716Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing subject"}
+{"timestamp":"2025-02-23T13:17:34.4207195Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing email"}
+{"timestamp":"2025-02-23T13:17:34.4207195Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing email"}
+{"timestamp":"2025-02-23T13:17:34.4267185Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing subject"}
+{"timestamp":"2025-02-23T13:17:34.4277174Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing subject"}
+{"timestamp":"2025-02-23T13:17:34.4357171Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Deserialization error"}
+{"timestamp":"2025-02-23T13:17:34.4407171Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing message content"}
+{"timestamp":"2025-02-23T13:17:34.4417214Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing message content"}
+{"timestamp":"2025-02-23T13:17:34.4477176Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid email format: invalid-email"}
+{"timestamp":"2025-02-23T13:17:34.4477176Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid email format: invalid-email"}
+{"timestamp":"2025-02-23T13:17:34.4540874Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing message content"}
+{"timestamp":"2025-02-23T13:17:34.4550911Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing message content"}
+{"timestamp":"2025-02-23T13:32:39.1563067Z","level":"ERROR","logger":"com.llyods.service.MessageProcessorService","thread":"main","message":"Failed to send email to: Subject. Error: Email sending failed"}
+{"timestamp":"2025-02-23T13:32:39.1812839Z","level":"ERROR","logger":"com.llyods.service.MessageProcessorService","thread":"main","message":"Unexpected error while processing message for email: Subject. Error: Unexpected error"}
+{"timestamp":"2025-02-23T13:32:39.9309044Z","level":"ERROR","logger":"com.llyods.service.PubSubConsumerService","thread":"main","message":"Error deserializing or processing the message: Deserialization error"}
+{"timestamp":"2025-02-23T13:32:39.9559118Z","level":"ERROR","logger":"com.llyods.service.PubSubConsumerService","thread":"main","message":"Invalid payload: Invalid payload"}
+{"timestamp":"2025-02-23T13:32:40.0009113Z","level":"ERROR","logger":"com.llyods.service.PubSubConsumerService","thread":"main","message":"Invalid payload: Invalid payload"}
+{"timestamp":"2025-02-23T13:32:40.0159823Z","level":"ERROR","logger":"com.llyods.service.PubSubConsumerService","thread":"main","message":"Invalid payload: Invalid payload"}
+{"timestamp":"2025-02-23T13:32:40.6237002Z","level":"ERROR","logger":"com.llyods.service.PubSubMailSenderService","thread":"main","message":"Failed to send email to: demo@gmail.com. Error: Mail sending error"}
+{"timestamp":"2025-02-23T13:32:40.6402319Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing email"}
+{"timestamp":"2025-02-23T13:32:40.6412345Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing email"}
+{"timestamp":"2025-02-23T13:32:40.6637732Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing subject"}
+{"timestamp":"2025-02-23T13:32:40.6647729Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing subject"}
+{"timestamp":"2025-02-23T13:32:40.6873475Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing email"}
+{"timestamp":"2025-02-23T13:32:40.6873475Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing email"}
+{"timestamp":"2025-02-23T13:32:40.6978734Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing subject"}
+{"timestamp":"2025-02-23T13:32:40.6978734Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing subject"}
+{"timestamp":"2025-02-23T13:32:40.707882Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Deserialization error"}
+{"timestamp":"2025-02-23T13:32:40.7221473Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing message content"}
+{"timestamp":"2025-02-23T13:32:40.723148Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing message content"}
+{"timestamp":"2025-02-23T13:32:40.733672Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid email format: invalid-email"}
+{"timestamp":"2025-02-23T13:32:40.733672Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid email format: invalid-email"}
+{"timestamp":"2025-02-23T13:32:40.7396692Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing message content"}
+{"timestamp":"2025-02-23T13:32:40.7406701Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing message content"}
+{"timestamp":"2025-02-23T13:43:23.5806184Z","level":"ERROR","logger":"com.llyods.service.MessageProcessorService","thread":"main","message":"Failed to send email to: Subject. Error: Email sending failed"}
+{"timestamp":"2025-02-23T13:43:23.6036285Z","level":"ERROR","logger":"com.llyods.service.MessageProcessorService","thread":"main","message":"Unexpected error while processing message for email: Subject. Error: Unexpected error"}
+{"timestamp":"2025-02-23T13:43:24.1466778Z","level":"ERROR","logger":"com.llyods.service.PubSubConsumerService","thread":"main","message":"Error deserializing or processing the message: Deserialization error"}
+{"timestamp":"2025-02-23T13:43:24.1777597Z","level":"ERROR","logger":"com.llyods.service.PubSubConsumerService","thread":"main","message":"Invalid payload: Invalid payload"}
+{"timestamp":"2025-02-23T13:43:24.2122735Z","level":"ERROR","logger":"com.llyods.service.PubSubConsumerService","thread":"main","message":"Invalid payload: Invalid payload"}
+{"timestamp":"2025-02-23T13:43:24.2200617Z","level":"ERROR","logger":"com.llyods.service.PubSubConsumerService","thread":"main","message":"Invalid payload: Invalid payload"}
+{"timestamp":"2025-02-23T13:43:24.7134524Z","level":"ERROR","logger":"com.llyods.service.PubSubMailSenderService","thread":"main","message":"Failed to send email to: demo@gmail.com. Error: Mail sending error"}
+{"timestamp":"2025-02-23T13:43:24.7249706Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing email"}
+{"timestamp":"2025-02-23T13:43:24.7249706Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing email"}
+{"timestamp":"2025-02-23T13:43:24.7440667Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing subject"}
+{"timestamp":"2025-02-23T13:43:24.7450627Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing subject"}
+{"timestamp":"2025-02-23T13:43:24.7580627Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing email"}
+{"timestamp":"2025-02-23T13:43:24.7580627Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing email"}
+{"timestamp":"2025-02-23T13:43:24.7660692Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing subject"}
+{"timestamp":"2025-02-23T13:43:24.7660692Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing subject"}
+{"timestamp":"2025-02-23T13:43:24.7750631Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Deserialization error"}
+{"timestamp":"2025-02-23T13:43:24.7821459Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing message content"}
+{"timestamp":"2025-02-23T13:43:24.7831466Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing message content"}
+{"timestamp":"2025-02-23T13:43:24.7901503Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid email format: invalid-email"}
+{"timestamp":"2025-02-23T13:43:24.7911459Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid email format: invalid-email"}
+{"timestamp":"2025-02-23T13:43:24.7965722Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing message content"}
+{"timestamp":"2025-02-23T13:43:24.7965722Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing message content"}
+{"timestamp":"2025-02-23T13:50:57.2294438Z","level":"ERROR","logger":"org.springframework.boot.SpringApplication","thread":"main","message":"Application run failed"}
+{"timestamp":"2025-02-23T13:53:10.5598276Z","level":"ERROR","logger":"com.llyods.service.MessageProcessorService","thread":"main","message":"Failed to send email to: Subject. Error: Email sending failed"}
+{"timestamp":"2025-02-23T13:53:10.5964989Z","level":"ERROR","logger":"com.llyods.service.MessageProcessorService","thread":"main","message":"Unexpected error while processing message for email: Subject. Error: Unexpected error"}
+{"timestamp":"2025-02-23T13:53:11.566782Z","level":"ERROR","logger":"com.llyods.service.PubSubConsumerService","thread":"main","message":"Error deserializing or processing the message: Deserialization error"}
+{"timestamp":"2025-02-23T13:53:11.5963583Z","level":"ERROR","logger":"com.llyods.service.PubSubConsumerService","thread":"main","message":"Invalid payload: Invalid payload"}
+{"timestamp":"2025-02-23T13:53:11.6433854Z","level":"ERROR","logger":"com.llyods.service.PubSubConsumerService","thread":"main","message":"Invalid payload: Invalid payload"}
+{"timestamp":"2025-02-23T13:53:11.655309Z","level":"ERROR","logger":"com.llyods.service.PubSubConsumerService","thread":"main","message":"Invalid payload: Invalid payload"}
+{"timestamp":"2025-02-23T13:53:12.4370148Z","level":"ERROR","logger":"com.llyods.service.PubSubMailSenderService","thread":"main","message":"Failed to send email to: demo@gmail.com. Error: Mail sending error"}
+{"timestamp":"2025-02-23T13:53:12.4480246Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing email"}
+{"timestamp":"2025-02-23T13:53:12.4493903Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing email"}
+{"timestamp":"2025-02-23T13:53:12.4704885Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing subject"}
+{"timestamp":"2025-02-23T13:53:12.4714866Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing subject"}
+{"timestamp":"2025-02-23T13:53:12.4849134Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing email"}
+{"timestamp":"2025-02-23T13:53:12.4859133Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing email"}
+{"timestamp":"2025-02-23T13:53:12.4954227Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing subject"}
+{"timestamp":"2025-02-23T13:53:12.4964371Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing subject"}
+{"timestamp":"2025-02-23T13:53:12.5114025Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Deserialization error"}
+{"timestamp":"2025-02-23T13:53:12.5197252Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing message content"}
+{"timestamp":"2025-02-23T13:53:12.5197252Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing message content"}
+{"timestamp":"2025-02-23T13:53:12.5306826Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid email format: invalid-email"}
+{"timestamp":"2025-02-23T13:53:12.5316832Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid email format: invalid-email"}
+{"timestamp":"2025-02-23T13:53:12.539825Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Invalid payload: Missing message content"}
+{"timestamp":"2025-02-23T13:53:12.539825Z","level":"ERROR","logger":"com.llyods.util.PayloadValidator","thread":"main","message":"Error deserializing or validating payload: Invalid message payload: Missing message content"}
+{"timestamp":"2025-02-23T13:59:30.4237479Z","level":"ERROR","logger":"org.springframework.boot.SpringApplication","thread":"main","message":"Application run failed"}
