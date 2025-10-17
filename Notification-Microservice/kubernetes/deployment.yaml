@@ -4,6 +4,7 @@ metadata:
   name: notification-microservice
   namespace: application-service
 spec:
+  serviceAccountName: notification-ksa
   replicas: 1
   selector:
     matchLabels:
