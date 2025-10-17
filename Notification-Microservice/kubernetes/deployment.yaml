@@ -13,7 +13,7 @@ spec:
       labels:
         app: notification-microservice
     spec:
-      serviceAccountName: notification-sa
+      serviceAccountName: notification-ksa
       containers:
         - name: app-container
           image: __IMAGE_PATH__
